@@ -1,12 +1,10 @@
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Header from '../components/Header';
 
 function DefaultLayout({ children }) {
     return (
         <div>
             <Header></Header>
             <div className="container">
-                <Sidebar></Sidebar>
                 <div className="content">{children}</div>
             </div>
         </div>
